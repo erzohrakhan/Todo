@@ -1,19 +1,21 @@
 {
   "name": "pern-todo",
   "version": "1.0.0",
-  "description": "Simple PERN stack todo app",
-  "main": "server/index.js",
+  "description": "Simple PERN stack todo app on Vercel",
+  "private": true,
   "scripts": {
-    "start": "node server/index.js",
-    "server": "node server/index.js",
-    "client": "cd client && npm start",
-    "build": "cd client && npm run build",
-    "install-all": "npm install && cd client && npm install"
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "dev": "react-scripts start"
   },
   "dependencies": {
-    "cors": "^2.8.5",
-    "dotenv": "^16.4.5",
-    "express": "^4.21.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-scripts": "5.0.1",
     "pg": "^8.13.0"
+  },
+  "browserslist": {
+    "production": [">0.2%", "not dead", "not op_mini all"],
+    "development": ["last 1 chrome version", "last 1 firefox version", "last 1 safari version"]
   }
 }
